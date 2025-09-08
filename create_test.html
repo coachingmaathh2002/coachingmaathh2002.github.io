@@ -1,36 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Create Test</title>
-  <link rel="stylesheet" href="styles.css"/>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Create New Mock Test</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #1173d4;
+      --background-color: #111418;
+      --card-background-color: #1c2127;
+      --text-primary: #ffffff;
+      --text-secondary: #9dabb9;
+      --border-color: #3b4754;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-primary);
+    }
+    .form-input, .form-select, .form-textarea {
+      background-color: var(--card-background-color);
+      border-color: var(--border-color);
+      color: var(--text-primary);
+      border-radius: 0.5rem;
+      transition: all 0.3s ease;
+    }
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      outline: none;
+      ring: 2px;
+      ring-color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+    .btn-primary {
+      background-color: var(--primary-color);
+      color: white;
+      font-weight: 600;
+      border-radius: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #0e5aab;
+    }
+    .btn-secondary {
+      background-color: var(--card-background-color);
+      color: var(--text-primary);
+      font-weight: 600;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--border-color);
+      transition: background-color 0.3s ease;
+    }
+    .btn-secondary:hover {
+      background-color: #283039;
+    }
+  </style>
 </head>
-<body>
-  <header>
-    <h1>Create New Test</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="admin_dashboard.html">Admin Dashboard</a></li>
-      </ul>
-    </nav>
-  </header>
+<body class="bg-background-color">
+<div class="flex min-h-screen">
+<aside class="w-64 bg-card-background-color p-6 flex-shrink-0">
+<div class="flex items-center gap-3 mb-10">
+<svg class="text-primary-color h-8 w-8" fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z"></path>
+</svg>
+<h1 class="text-xl font-bold">MathPrep</h1>
+</div>
+<nav class="flex flex-col gap-4">
+<a class="flex items-center gap-3 px-4 py-2 rounded-md text-text-secondary hover:bg-background-color hover:text-text-primary" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span>Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-md bg-background-color text-text-primary font-semibold" href="#">
+<span class="material-symbols-outlined">description</span>
+<span>Tests</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-md text-text-secondary hover:bg-background-color hover:text-text-primary" href="#">
+<span class="material-symbols-outlined">group</span>
+<span>Students</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-md text-text-secondary hover:bg-background-color hover:text-text-primary" href="#">
+<span class="material-symbols-outlined">bar_chart</span>
+<span>Reports</span>
+</a>
+</nav>
+</aside>
+<main class="flex-1">
+<header class="flex items-center justify-end h-20 px-10 border-b border-border-color">
+<div class="flex items-center gap-6">
+<button class="text-text-secondary hover:text-text-primary">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDxHcCsDz-XhZRH9Doe_ynO2hVCo_gA-19N4cgH6ZdpQErDdbPw1cNvl15428AlKvhzYh_rzWNXNF37v5Ktwn2kwWu_fuUl3ClQGaPHYwT1naa8WgtYgBJX6YE694G-t9k_LIChfzzUGSh3UyF3OG4RtyidUg_Yfo_PO0DT2dSU2ro6lho2C8OAdon8kiGoKFXfDBEmhFeKb2IHTKpthgva8dZHS6h4nz9wjJyz94De7eaIJzEJH22ZQBDhKEYhT0UPrycvJ85vdbU");'></div>
+<div>
+<p class="font-semibold text-sm">John Doe</p>
+<p class="text-xs text-text-secondary">Admin</p>
+</div>
+</div>
+</div>
+</header>
+<div class="p-10">
+<div class="max-w-4xl mx-auto">
+<div class="mb-8">
+<h2 class="text-3xl font-bold text-text-primary">Create New Mock Test</h2>
+<p class="text-text-secondary mt-1">Fill in the details below to create a new mock test for your students.</p>
+</div>
+<form class="space-y-8">
+<div class="bg-card-background-color p-8 rounded-lg border border-border-color">
+<h3 class="text-xl font-semibold mb-6">Test Details</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<label class="flex flex-col gap-2">
+<span class="font-medium text-sm">Test Title</span>
+<input class="form-input h-11 px-4 text-sm" placeholder="e.g., Algebra I Mid-term" type="text"/>
+</label>
+<label class="flex flex-col gap-2">
+<span class="font-medium text-sm">Subject</span>
+<select class="form-select h-11 px-4 text-sm">
+<option disabled="" selected="">Select subject</option>
+<option>Algebra</option>
+<option>Geometry</option>
+<option>Calculus</option>
+<option>Trigonometry</option>
+</select>
+</label>
+<label class="flex flex-col gap-2">
+<span class="font-medium text-sm">Difficulty Level</span>
+<select class="form-select h-11 px-4 text-sm">
+<option disabled="" selected="">Select difficulty</option>
+<option>Easy</option>
+<option>Medium</option>
+<option>Hard</option>
+</select>
+</label>
+<label class="flex flex-col gap-2">
+<span class="font-medium text-sm">Time Limit (minutes)</span>
+<input class="form-input h-11 px-4 text-sm" placeholder="e.g., 60" type="number"/>
+</label>
+</div>
+</div>
+<div class="bg-card-background-color p-8 rounded-lg border border-border-color">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-xl font-semibold">Questions</h3>
+<button class="btn-secondary flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-base">add</span>
+<span>Add Question</span>
+</button>
+</div>
+<div class="space-y-6 border-t border-border-color pt-6">
+<div class="flex justify-between items-center">
+<p class="font-semibold">Question 1</p>
+<button class="text-text-secondary hover:text-red-500" type="button">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+<label class="flex flex-col gap-2">
+<span class="font-medium text-sm">Question Text</span>
+<textarea class="form-textarea min-h-28 p-4 text-sm" placeholder="Enter question text..."></textarea>
+</label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<label class="flex items-center gap-3">
+<input class="form-radio text-primary-color focus:ring-primary-color" name="correct_answer_1" type="radio"/>
+<input class="form-input flex-1 h-11 px-4 text-sm" placeholder="Option A" type="text"/>
+</label>
+<label class="flex items-center gap-3">
+<input class="form-radio text-primary-color focus:ring-primary-color" name="correct_answer_1" type="radio"/>
+<input class="form-input flex-1 h-11 px-4 text-sm" placeholder="Option B" type="text"/>
+</label>
+<label class="flex items-center gap-3">
+<input class="form-radio text-primary-color focus:ring-primary-color" name="correct_answer_1" type="radio"/>
+<input class="form-input flex-1 h-11 px-4 text-sm" placeholder="Option C" type="text"/>
+</label>
+<label class="flex items-center gap-3">
+<input class="form-radio text-primary-color focus:ring-primary-color" name="correct_answer_1" type="radio"/>
+<input class="form-input flex-1 h-11 px-4 text-sm" placeholder="Option D" type="text"/>
+</label>
+</div>
+</div>
+</div>
+<div class="flex justify-end gap-4 pt-4">
+<button class="btn-secondary px-6 py-2.5" type="button">Save Draft</button>
+<button class="btn-primary px-6 py-2.5" type="submit">Create Test</button>
+</div>
+</form>
+</div>
+</div>
+</main>
+</div>
 
-  <main>
-    <form>
-      <label for="test-name">Test Name:</label>
-      <input type="text" id="test-name" name="test-name" required><br><br>
-
-      <label for="questions">Add Questions:</label><br>
-      <textarea id="questions" name="questions" rows="6" cols="50"></textarea><br><br>
-
-      <button type="submit">Create Test</button>
-    </form>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Online Math Test Platform</p>
-  </footer>
-</body>
-</html>
+</body></html>
