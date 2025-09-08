@@ -1,40 +1,143 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Student Dashboard</title>
-  <link rel="stylesheet" href="styles.css"/>
+<html><head>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 </head>
 <body>
-  <header>
-    <h1>Student Dashboard</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="login.html">Logout</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-  </header>
+<div class="relative flex size-full min-h-screen flex-col bg-[#111311] dark group/design-root" style='font-family: Manrope, "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#2a2e2a] px-10 py-4">
+<div class="flex items-center gap-3 text-white">
+<svg class="h-7 w-7 text-[#53d22d]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z" fill="currentColor"></path>
+</svg>
+<h1 class="text-white text-xl font-bold">MathPrep</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-gray-300 hover:text-white text-sm font-medium transition-colors" href="#">Practice</a>
+<a class="text-gray-300 hover:text-white text-sm font-medium transition-colors" href="#">Tests</a>
+<a class="text-gray-300 hover:text-white text-sm font-medium transition-colors" href="#">Resources</a>
+<a class="text-gray-300 hover:text-white text-sm font-medium transition-colors" href="#">Community</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="relative flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-[#1f231f] text-gray-300 hover:bg-[#2a2e2a] hover:text-white transition-colors">
+<span class="material-symbols-outlined"> notifications </span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB0vwUvftemE9YeQcBFQp6hpwDk5aDnMDZOvmH6mtK0s_mDieCGB_j6Rr1wZxNIRp5tv1sLQbBdMefhTnQCtGPSlkeN5-foPDnp7lbmiH3AkfKOgCl8lQuIiezbI-hVexXdpfXM_eLC3AoAKX-N2Wr44N85jtPdmF6RK4JptQukunjiE5lykLilirquLr34y_M6Y_QlXsbRsV8uHm7A7CBvodj_8aVMKNVTLAJ5cqpFwp6F0rrV2Fm15oDCe9kOHmjRJJsPhiulpdY");'></div>
+</div>
+</header>
+<main class="flex-1 px-4 sm:px-10 md:px-20 lg:px-40 py-8">
+<div class="mx-auto max-w-5xl">
+<div class="mb-8">
+<h2 class="text-4xl font-bold text-white">Welcome back, Sarah!</h2>
+<p class="text-gray-400 mt-2">Your personalized dashboard to track progress and prepare for success.</p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 mb-12">
+<button class="flex items-center justify-center gap-2 rounded-full bg-[#53d22d] px-6 py-3 text-sm font-bold text-[#111311] transition-transform hover:scale-105">
+<span class="material-symbols-outlined"> play_arrow </span>
+<span>Start New Test</span>
+</button>
+<button class="flex items-center justify-center gap-2 rounded-full bg-[#1f231f] px-6 py-3 text-sm font-bold text-white transition-transform hover:scale-105 hover:bg-[#2a2e2a]">
+<span class="material-symbols-outlined"> history </span>
+<span>Review Past Tests</span>
+</button>
+</div>
+<div class="mb-12">
+<h3 class="text-2xl font-bold text-white mb-6">Progress Overview</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+<div class="flex flex-col gap-2 rounded-2xl border border-[#2a2e2a] bg-[#181a18] p-6">
+<p class="text-gray-300">Total Tests Taken</p>
+<p class="text-3xl font-bold text-white">15</p>
+</div>
+<div class="flex flex-col gap-2 rounded-2xl border border-[#2a2e2a] bg-[#181a18] p-6">
+<p class="text-gray-300">Average Score</p>
+<p class="text-3xl font-bold text-white">82%</p>
+</div>
+<div class="flex flex-col gap-2 rounded-2xl border border-[#2a2e2a] bg-[#181a18] p-6">
+<p class="text-gray-300">Improvement Rate</p>
+<p class="text-3xl font-bold text-[#53d22d]">+15%</p>
+</div>
+</div>
+</div>
+<div class="mb-12 rounded-2xl border border-[#2a2e2a] bg-[#181a18] p-6">
+<h3 class="text-2xl font-bold text-white mb-6">Performance Over Time</h3>
+<div class="flex flex-col md:flex-row items-start gap-8">
+<div class="flex-shrink-0">
+<p class="text-gray-300">Score Trend</p>
+<p class="text-4xl font-bold text-white">82%</p>
+<div class="flex items-center gap-2 mt-1">
+<p class="text-gray-400 text-sm">Last 30 Days</p>
+<p class="text-[#53d22d] text-sm font-medium">+15%</p>
+</div>
+</div>
+<div class="flex-1 w-full">
+<svg fill="none" height="180" preserveAspectRatio="none" viewBox="0 0 472 150" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25V149H0V109Z" fill="url(#paint0_linear_1131_5935_updated)"></path>
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25" stroke="#53d22d" stroke-linecap="round" stroke-width="3"></path>
+<defs>
+<linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_1131_5935_updated" x1="236" x2="236" y1="1" y2="149">
+<stop stop-color="#53d22d" stop-opacity="0.3"></stop>
+<stop offset="1" stop-color="#53d22d" stop-opacity="0"></stop>
+</linearGradient>
+</defs>
+</svg>
+<div class="flex justify-around mt-4">
+<p class="text-gray-400 text-xs font-bold uppercase">Week 1</p>
+<p class="text-gray-400 text-xs font-bold uppercase">Week 2</p>
+<p class="text-gray-400 text-xs font-bold uppercase">Week 3</p>
+<p class="text-gray-400 text-xs font-bold uppercase">Week 4</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-white mb-6">Upcoming Tests</h3>
+<div class="overflow-x-auto rounded-2xl border border-[#2a2e2a] bg-[#181a18]">
+<table class="w-full text-left">
+<thead class="bg-[#1f231f]">
+<tr>
+<th class="px-6 py-4 text-sm font-medium text-white">Test Name</th>
+<th class="px-6 py-4 text-sm font-medium text-white">Date</th>
+<th class="px-6 py-4 text-sm font-medium text-white hidden sm:table-cell">Time</th>
+<th class="px-6 py-4 text-sm font-medium text-white text-center">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-[#2a2e2a]">
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-white">Mock Test 3</td>
+<td class="px-6 py-4 whitespace-nowrap text-gray-400">2024-03-15</td>
+<td class="px-6 py-4 whitespace-nowrap text-gray-400 hidden sm:table-cell">10:00 AM</td>
+<td class="px-6 py-4 whitespace-nowrap text-center">
+<span class="inline-flex items-center rounded-full bg-[#2a2e2a] px-3 py-1 text-xs font-medium text-white"> Scheduled </span>
+</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-white">Mock Test 4</td>
+<td class="px-6 py-4 whitespace-nowrap text-gray-400">2024-03-22</td>
+<td class="px-6 py-4 whitespace-nowrap text-gray-400 hidden sm:table-cell">10:00 AM</td>
+<td class="px-6 py-4 whitespace-nowrap text-center">
+<span class="inline-flex items-center rounded-full bg-[#2a2e2a] px-3 py-1 text-xs font-medium text-white"> Scheduled </span>
+</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-white">Mock Test 5</td>
+<td class="px-6 py-4 whitespace-nowrap text-gray-400">2024-03-29</td>
+<td class="px-6 py-4 whitespace-nowrap text-gray-400 hidden sm:table-cell">10:00 AM</td>
+<td class="px-6 py-4 whitespace-nowrap text-center">
+<span class="inline-flex items-center rounded-full bg-[#2a2e2a] px-3 py-1 text-xs font-medium text-white"> Scheduled </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
 
-  <main>
-    <section>
-      <h2>Available Tests</h2>
-      <ul>
-        <li><a href="#">Mock Test 1</a></li>
-        <li><a href="#">Mock Test 2</a></li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Your Results</h2>
-      <p>No results available yet.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Online Math Test Platform</p>
-  </footer>
-</body>
-</html>
+</body></html>
