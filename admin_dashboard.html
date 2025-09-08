@@ -1,41 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Admin Dashboard</title>
-  <link rel="stylesheet" href="styles.css"/>
+<html><head>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B600%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #1173d4;
+      }
+    </style>
 </head>
-<body>
-  <header>
-    <h1>Admin Dashboard</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="create_test.html">Create Test</a></li>
-        <li><a href="results_analysis.html">View Results</a></li>
-        <li><a href="student_dashboard.html">Student Dashboard</a></li>
-      </ul>
-    </nav>
-  </header>
+<body class="bg-gray-900 text-gray-100">
+<div class="relative flex size-full min-h-screen flex-col" style='font-family: Inter, "Noto Sans", sans-serif;'>
+<div class="flex h-full grow flex-col">
+<div class="flex flex-1">
+<aside class="flex w-64 flex-col bg-gray-800 p-6">
+<div class="flex items-center gap-3 mb-10">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB54t4vZUhDxXsYX1lFLl18pqIFl_WGp6MgTNNSKdmyvI5q1Kqj9MjCUD3BUCxuqPH00BhNQzhk0FSfJQjhOk3a92PxTyA_9gt_C_nNDmgIgM0KifwjypoNzOOj39A0Iw55ZGxIF7Cwb5YsLsZGxzDj7MGzIRliXRs8XSN-mwzaFuPizLo5txvsZo5sTYjgN8Rk8nEdKl9D1mv6T2Le5PFJQo9Z1sNEgEIO-S-5kTm1t6qxv5fZ0HzABNzkfSOkscNvHbrT2tWS4m0");'></div>
+<h1 class="text-white text-lg font-semibold">MathPrep Admin</h1>
+</div>
+<nav class="flex-1 space-y-2">
+<a class="flex items-center gap-3 px-4 py-2.5 rounded-md bg-[var(--primary-color)] text-white" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-sm font-medium">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 rounded-md text-gray-400 hover:bg-gray-700 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">description</span>
+<span class="text-sm font-medium">Tests</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 rounded-md text-gray-400 hover:bg-gray-700 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="text-sm font-medium">Students</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 rounded-md text-gray-400 hover:bg-gray-700 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">analytics</span>
+<span class="text-sm font-medium">Results</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2.5 rounded-md text-gray-400 hover:bg-gray-700 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-sm font-medium">Settings</span>
+</a>
+</nav>
+<div class="mt-auto">
+<a class="flex items-center gap-3 px-4 py-2.5 rounded-md text-gray-400 hover:bg-gray-700 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">help</span>
+<span class="text-sm font-medium">Help and Docs</span>
+</a>
+</div>
+</aside>
+<main class="flex-1 p-8">
+<header class="mb-8">
+<h1 class="text-3xl font-bold text-white">Dashboard</h1>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+<div class="flex flex-col gap-2 rounded-lg p-6 bg-gray-800">
+<p class="text-gray-400 text-sm font-medium">Total Tests</p>
+<p class="text-white text-3xl font-bold">25</p>
+</div>
+<div class="flex flex-col gap-2 rounded-lg p-6 bg-gray-800">
+<p class="text-gray-400 text-sm font-medium">Active Students</p>
+<p class="text-white text-3xl font-bold">150</p>
+</div>
+<div class="flex flex-col gap-2 rounded-lg p-6 bg-gray-800">
+<p class="text-gray-400 text-sm font-medium">Average Score</p>
+<p class="text-white text-3xl font-bold">78%</p>
+</div>
+</div>
+<h2 class="text-xl font-bold text-white mb-4">Recent Activity</h2>
+<div class="overflow-x-auto">
+<div class="rounded-lg border border-gray-700 bg-gray-800">
+<table class="w-full">
+<thead class="bg-gray-700/50">
+<tr>
+<th class="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">Date</th>
+<th class="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">Activity</th>
+<th class="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">Details</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-gray-700">
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">2023-11-15</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">New test created</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">Calculus Mock Test 3</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">2023-11-14</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">Student enrolled</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">Sarah Miller</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">2023-11-13</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">Test results updated</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">Algebra Mock Test 1</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">2023-11-12</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">New student account</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">David Lee</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">2023-11-11</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">Test edited</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">Geometry Mock Test 2</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
 
-  <main>
-    <section>
-      <h2>Welcome, Admin!</h2>
-      <p>From here, you can create new tests, manage existing ones, and review student results.</p>
-    </section>
-
-    <section>
-      <h2>Available Actions</h2>
-      <ul>
-        <li><a href="create_test.html">Create New Test</a></li>
-        <li><a href="results_analysis.html">View Results & Analysis</a></li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Online Math Test Platform</p>
-  </footer>
-</body>
-</html>
+</body></html>
