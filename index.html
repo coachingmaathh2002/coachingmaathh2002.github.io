@@ -1,31 +1,166 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home</title>
-  <link rel="stylesheet" href="styles.css"/>
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 </head>
 <body>
-  <header>
-    <h1>Welcome to the Online Math Test Platform</h1>
-    <nav>
-      <ul>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-  </header>
+<div class="relative flex size-full min-h-screen flex-col bg-[#111310] dark group/design-root overflow-x-hidden" style='font-family: Manrope, "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#2d372a] px-10 py-4">
+<div class="flex items-center gap-3 text-white">
+<svg class="size-7" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z" fill="#53d22d"></path>
+</svg>
+<h2 class="text-white text-xl font-bold">MathPrep</h2>
+</div>
+<nav class="hidden lg:flex items-center gap-8 text-base font-medium text-gray-300">
+<a class="hover:text-white transition-colors" href="#">Practice</a>
+<a class="hover:text-white transition-colors" href="#">Tests</a>
+<a class="hover:text-white transition-colors" href="#">Resources</a>
+<a class="hover:text-white transition-colors" href="#">About</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex min-w-[90px] items-center justify-center overflow-hidden rounded-full h-11 px-5 bg-transparent text-white text-sm font-bold leading-normal tracking-wide border-2 border-[#2d372a] hover:bg-[#2d372a] transition-colors">
+<span class="truncate">Log In</span>
+</button>
+<button class="flex min-w-[90px] items-center justify-center overflow-hidden rounded-full h-11 px-5 bg-[#54d22d] text-[#131712] text-sm font-bold leading-normal tracking-wide hover:bg-[#4ac522] transition-colors">
+<span class="truncate">Sign Up</span>
+</button>
+</div>
+</header>
+<main class="flex-1">
+<section class="py-20 px-4">
+<div class="container mx-auto">
+<div class="flex min-h-[520px] flex-col gap-8 items-center justify-center rounded-2xl bg-cover bg-center p-8 text-center shadow-2xl" style='background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjL6qURaFZBM8qDmGp53DgxyUJr78IoNDtdpwb_O4We7SQ3kn-JCucoWB90Q6SxsQvPVRUtScyI6TSKLgWw2OCU17ZuIuUK0JLqhVd-wmJjmUhwCMzsefQ95qdnVpa6ZgbJMCG3cBeU2hK6qD7LHqhjqmeK8U8bhBop99BwjZGZGPo66Cx_-KWJGRPY114Uj5Or6gnY8dPXp2Vqbs5n_OjQnNYAbZ_kCkyzc6aIaeOjuwGDqDd4IyYvD9q71Yw4O2CFIAForplg3g");'>
+<div class="max-w-3xl">
+<h1 class="text-white text-4xl sm:text-5xl md:text-6xl font-black leading-tight tracking-tighter">Ace Your Math Exams with Confidence</h1>
+<p class="text-gray-200 text-lg sm:text-xl mt-4 max-w-2xl mx-auto">
+                    Prepare for success with our comprehensive online mock tests. Master key concepts, improve your problem-solving skills, and achieve your academic goals.
+                  </p>
+</div>
+<button class="flex min-w-[120px] items-center justify-center overflow-hidden rounded-full h-14 px-8 bg-[#54d22d] text-[#131712] text-base font-bold leading-normal tracking-wide hover:bg-[#4ac522] transition-colors">
+<span class="truncate">Start a Free Test</span>
+</button>
+</div>
+</div>
+</section>
+<section class="py-20 px-4">
+<div class="container mx-auto">
+<h2 class="text-white text-3xl sm:text-4xl font-bold text-center mb-12">Explore Our Math Topics</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+<div class="group flex flex-col gap-4 text-center">
+<div class="w-full h-56 bg-center bg-no-repeat bg-cover rounded-xl overflow-hidden transform group-hover:scale-105 transition-transform duration-300" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAaUvD2Hej-wqJjBp6-5DSKT6Zsy26tKQdvJS_Neciwg0xbPB9mdKpcQsxRrWHnVv0Q_M6mzr9WF08cNsk2tLx4KQ6GqkIgXB9NUbVi0PoBzJyW3kyLHXy5ENvqYqBjsYYrMA9OBbMW9OBPgGtpyvbqmhys8wnSucdo1hr-DSrHzRiajtZMBV4qn4qSvPGtiBN01q0uCiQbd6b6O6UYRqojlWMbhA3-ZwLrfMHSWp9T48covM9XILiemTYr5CncWAxm8J9fji7apBQ");'></div>
+<div>
+<h3 class="text-white text-xl font-bold">Algebra</h3>
+<p class="text-gray-400 mt-1">Master equations, functions, and variables.</p>
+</div>
+</div>
+<div class="group flex flex-col gap-4 text-center">
+<div class="w-full h-56 bg-center bg-no-repeat bg-cover rounded-xl overflow-hidden transform group-hover:scale-105 transition-transform duration-300" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCwFXQaw3zDvGlM-IB3twbgXCb9VyznCb4unEP9LWx8YqLVKBdc2IVHh0u9SZqhKPzvWnkfMmgS8kfg3Rxjz7OIYKFVJZKd_TazmZYpYoh44uk3NuRU4fWFGFiyCl2tqYeoDOvZzB0tnLoud_PCBq9rg0Gkrmsxkh1WDX9zhZDNjrlDa4PL1I2Yt38RaOFq8xr4tVwCMrMN5_OVFq8w403PmF9iumv20tVqbuGRXTdQ_TpY5yfrhs4M3K8h8qUf7arlCRlPDwbt0n0");'></div>
+<div>
+<h3 class="text-white text-xl font-bold">Calculus</h3>
+<p class="text-gray-400 mt-1">Conquer derivatives, integrals, and limits.</p>
+</div>
+</div>
+<div class="group flex flex-col gap-4 text-center">
+<div class="w-full h-56 bg-center bg-no-repeat bg-cover rounded-xl overflow-hidden transform group-hover:scale-105 transition-transform duration-300" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAdvMnQ9eu82Uq4cqoklcHj9zZPvOEu0leo3TCJASBHS3SmWNbQQySF3CDM_R162y580Xbqljpq8OpzGQ2Xzw3iyA8D0_gnwt5EQ558PPuzp6PLKKSP5N24dAj3JL_UH8dGI3A-Vg1YgWkhK3DxbGPPZ_hz_DbTr4sjifre7STWYrpF5YYzU6yVYquYEH0RXkhy2kb5MZ9Nc_ffPNaSR-ndeaJnCkW9tW9KwhuwnBSy2HXH8IzwFU6jY6ZBLfHuapcezYYRBJgeC5k");'></div>
+<div>
+<h3 class="text-white text-xl font-bold">Geometry</h3>
+<p class="text-gray-400 mt-1">Explore shapes, angles, and spatial reasoning.</p>
+</div>
+</div>
+<div class="group flex flex-col gap-4 text-center">
+<div class="w-full h-56 bg-center bg-no-repeat bg-cover rounded-xl overflow-hidden transform group-hover:scale-105 transition-transform duration-300" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjgAhXEL9iu7D-CtW8ykdYjpwsty6c03zhZpHfIyx39lpO-7hf190iowUBkjYf7lImSOYnigTYYSywzRf0ll8gFx3UovUrr9a0v1Bu2B2ybQif5PezSpQpsDE5iwaB2XdiYO_0oFgOonPxTP-7J2LsyXsPGPDmrxvJlyxekvwxJeujctwIfvK4_dSnBEu--9TfShpndDBSSeQ6jXbYsKA4ph4DaPqZfwHz_jReZDn5qXdmqyrpXS0JZQ_dXC06xQGOitNCXUEWcdM");'></div>
+<div>
+<h3 class="text-white text-xl font-bold">Statistics</h3>
+<p class="text-gray-400 mt-1">Analyze data, probability, and distributions.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 px-4 bg-[#181a17]">
+<div class="container mx-auto">
+<h2 class="text-white text-3xl sm:text-4xl font-bold text-center mb-12">Flexible Test Formats</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4 rounded-xl border border-[#2d372a] bg-[#1f251d] p-8 text-center items-center">
+<span class="material-symbols-outlined text-4xl text-[#54d22d]">timer</span>
+<h3 class="text-white text-xl font-bold">Timed Tests</h3>
+<p class="text-gray-400">Simulate real exam conditions with our timed mock tests.</p>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-[#2d372a] bg-[#1f251d] p-8 text-center items-center">
+<span class="material-symbols-outlined text-4xl text-[#54d22d]">trending_up</span>
+<h3 class="text-white text-xl font-bold">Adaptive Difficulty</h3>
+<p class="text-gray-400">Challenge yourself with tests that adjust to your skill level.</p>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-[#2d372a] bg-[#1f251d] p-8 text-center items-center">
+<span class="material-symbols-outlined text-4xl text-[#54d22d]">assessment</span>
+<h3 class="text-white text-xl font-bold">Detailed Reports</h3>
+<p class="text-gray-400">Receive comprehensive feedback to identify areas for improvement.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 px-4">
+<div class="container mx-auto">
+<div class="text-center max-w-3xl mx-auto">
+<h2 class="text-white text-3xl sm:text-4xl font-bold mb-4">Why Choose MathPrep?</h2>
+<p class="text-gray-300 text-lg">MathPrep provides a supportive and effective learning environment to help you excel in your math studies.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+<div class="flex flex-col gap-4 rounded-xl bg-transparent p-6 text-center items-center">
+<span class="material-symbols-outlined text-4xl text-[#54d22d]">checklist</span>
+<h3 class="text-white text-xl font-bold">Comprehensive Coverage</h3>
+<p class="text-gray-400">Our mock tests cover a wide range of math topics and difficulty levels.</p>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-transparent p-6 text-center items-center">
+<span class="material-symbols-outlined text-4xl text-[#54d22d]">insights</span>
+<h3 class="text-white text-xl font-bold">Personalized Learning</h3>
+<p class="text-gray-400">Get tailored recommendations and track your progress over time.</p>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-transparent p-6 text-center items-center">
+<span class="material-symbols-outlined text-4xl text-[#54d22d]">school</span>
+<h3 class="text-white text-xl font-bold">Expertly Crafted Questions</h3>
+<p class="text-gray-400">Practice with high-quality questions designed by experienced educators.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 px-4">
+<div class="container mx-auto">
+<div class="rounded-2xl bg-[#1f251d] border border-[#2d372a] p-12 text-center flex flex-col items-center">
+<h2 class="text-white text-3xl sm:text-4xl font-bold max-w-2xl">Ready to Boost Your Math Skills?</h2>
+<p class="text-gray-300 text-lg mt-4 max-w-2xl">Sign up today and start your journey to math success!</p>
+<button class="flex mt-8 min-w-[160px] items-center justify-center overflow-hidden rounded-full h-14 px-8 bg-[#54d22d] text-[#131712] text-base font-bold leading-normal tracking-wide hover:bg-[#4ac522] transition-colors">
+<span class="truncate">Get Started Now</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<footer class="border-t border-[#2d372a]">
+<div class="container mx-auto px-4 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-6">
+<div class="flex items-center gap-3 text-white">
+<svg class="size-7" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z" fill="#53d22d"></path>
+</svg>
+<h2 class="text-white text-xl font-bold">MathPrep</h2>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-6 text-gray-400">
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Contact Us</a>
+</div>
+<p class="text-gray-500 text-sm">© 2023 MathPrep. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</div>
 
-  <main>
-    <section>
-      <h2>About the Platform</h2>
-      <p>This is an online mock test system designed for math practice.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Online Math Test Platform</p>
-  </footer>
-</body>
-</html>
+</body></html>
