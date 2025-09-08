@@ -1,48 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Results Analysis</title>
-  <link rel="stylesheet" href="styles.css"/>
+<html><head>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<meta charset="utf-8"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #53d22d;
+      }
+    </style>
 </head>
-<body>
-  <header>
-    <h1>Results & Analysis</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="admin_dashboard.html">Admin Dashboard</a></li>
-      </ul>
-    </nav>
-  </header>
+<body class="bg-[#111827]">
+<div class="relative flex size-full min-h-screen flex-col text-white dark group/design-root" style='font-family: Manrope, "Noto Sans", sans-serif;'>
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-700 px-10 py-4">
+<div class="flex items-center gap-4">
+<svg class="text-green-500" fill="currentColor" height="32" viewBox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.59L5.59 11 7 9.59l4 4 7-7L19.41 8 11 16.59z"></path>
+</svg>
+<h2 class="text-xl font-bold tracking-tight">MathPrep</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-gray-300 hover:text-white text-sm font-medium transition-colors" href="#">Practice</a>
+<a class="text-gray-300 hover:text-white text-sm font-medium transition-colors" href="#">Tests</a>
+<a class="text-gray-300 hover:text-white text-sm font-medium transition-colors" href="#">Resources</a>
+<a class="text-gray-300 hover:text-white text-sm font-medium transition-colors" href="#">Community</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-green-500 text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-green-600 transition-colors">
+<span class="truncate">Upgrade</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAnOejWul5Nz5jU_cVVCn0r5V8MhXIyHwoPJQ0meDuhmNFXQll6LWw5vG2G-WWPx8SR7PfwicmpHKr7cmqYHWeK3p6m85bVQ1U3JTx0Cqj5DCvjH3DQvjAmC8ETpNAUt7r80Jdnf-p67aBHYmbbiURPTmshyIz0heh2O_enxtbiogZwh2BeVkYwkC8GUKXJVMI7zZp7lchCJnCFLyOOf0gqPDKE1UMwLFukcTtz5n62MB65vCrvUKcOknR69Lrz-Q9DGvn74GzuHMU");'></div>
+</div>
+</header>
+<main class="flex-1 px-4 sm:px-6 lg:px-10 py-8">
+<div class="max-w-4xl mx-auto">
+<div class="mb-8">
+<h1 class="text-4xl font-extrabold tracking-tight">Test Results</h1>
+<p class="text-gray-400 mt-2">Mock Test 1 - Algebra</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
+<div class="flex flex-col items-center justify-center gap-2 rounded-2xl p-6 bg-gray-800 border border-gray-700">
+<p class="text-lg font-medium text-gray-300">Score</p>
+<p class="text-5xl font-bold text-green-500">85%</p>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 rounded-2xl p-6 bg-gray-800 border border-gray-700">
+<p class="text-lg font-medium text-gray-300">Correct</p>
+<p class="text-4xl font-bold text-green-400">17/20</p>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 rounded-2xl p-6 bg-gray-800 border border-gray-700">
+<p class="text-lg font-medium text-gray-300">Incorrect</p>
+<p class="text-4xl font-bold text-red-500">3/20</p>
+</div>
+</div>
+<h2 class="text-3xl font-bold tracking-tight mb-6">Detailed Analysis</h2>
+<div class="flex flex-col gap-4">
+<details class="group rounded-xl border border-gray-700 bg-gray-800 transition-all duration-300 overflow-hidden" open="">
+<summary class="flex cursor-pointer items-center justify-between gap-4 p-4 hover:bg-gray-700/50">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-green-500">check_circle</span>
+<p class="text-lg font-medium">Question 1: Linear Equations</p>
+</div>
+<span class="material-symbols-outlined transform transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-6 border-t border-gray-700">
+<p class="text-gray-300"><span class="font-semibold text-white">Your answer:</span> x = 5 (Correct).</p>
+<p class="text-gray-300 mt-2"><span class="font-semibold text-white">Explanation:</span> The equation 2x + 5 = 15 can be solved by subtracting 5 from both sides, resulting in 2x = 10. Dividing both sides by 2 gives x = 5.</p>
+</div>
+</details>
+<details class="group rounded-xl border border-gray-700 bg-gray-800 transition-all duration-300 overflow-hidden">
+<summary class="flex cursor-pointer items-center justify-between gap-4 p-4 hover:bg-gray-700/50">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-red-500">cancel</span>
+<p class="text-lg font-medium">Question 2: Quadratic Equations</p>
+</div>
+<span class="material-symbols-outlined transform transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-6 border-t border-gray-700">
+<p class="text-gray-300"><span class="font-semibold text-white">Your answer:</span> x = 3 (Incorrect).</p>
+<p class="text-gray-300 mt-2"><span class="font-semibold text-white">Correct answer:</span> x = 2 or x = -5.</p>
+<p class="text-gray-300 mt-2"><span class="font-semibold text-white">Explanation:</span> For the equation x² + 3x - 10 = 0, we can factor it into (x+5)(x-2) = 0. This gives two solutions: x = -5 and x = 2.</p>
+</div>
+</details>
+<details class="group rounded-xl border border-gray-700 bg-gray-800 transition-all duration-300 overflow-hidden">
+<summary class="flex cursor-pointer items-center justify-between gap-4 p-4 hover:bg-gray-700/50">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-green-500">check_circle</span>
+<p class="text-lg font-medium">Question 3: Inequalities</p>
+</div>
+<span class="material-symbols-outlined transform transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-6 border-t border-gray-700">
+<p class="text-gray-300"><span class="font-semibold text-white">Your answer:</span> x &gt; 4 (Correct).</p>
+<p class="text-gray-300 mt-2"><span class="font-semibold text-white">Explanation:</span> To solve 3x - 7 &gt; 5, add 7 to both sides to get 3x &gt; 12. Then, divide by 3 to find x &gt; 4.</p>
+</div>
+</details>
+</div>
+</div>
+</main>
+<footer class="border-t border-solid border-gray-700">
+<div class="max-w-7xl mx-auto px-5 py-10">
+<div class="flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex flex-wrap items-center justify-center gap-6">
+<a class="text-gray-400 hover:text-white text-base font-normal transition-colors" href="#">Terms of Service</a>
+<a class="text-gray-400 hover:text-white text-base font-normal transition-colors" href="#">Privacy Policy</a>
+</div>
+<p class="text-gray-400 text-base font-normal">© 2024 MathPrep. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
 
-  <main>
-    <section>
-      <h2>Student Scores</h2>
-      <table border="1">
-        <thead>
-          <tr>
-            <th>Student Name</th>
-            <th>Score</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>John Doe</td>
-            <td>85%</td>
-          </tr>
-          <tr>
-            <td>Jane Smith</td>
-            <td>92%</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Online Math Test Platform</p>
-  </footer>
-</body>
-</html>
+</body></html>
