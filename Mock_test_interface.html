@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #53d22d;
+      }
+    </style>
+</head>
+<body class="bg-gray-900 font-manrope text-white">
+<div class="relative flex size-full min-h-screen flex-col bg-[#131712] dark group/design-root" style="--radio-dot-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(34, 197, 94)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3ccircle cx=%278%27 cy=%278%27 r=%273%27/%3e%3c/svg%3e');">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#2d372a] px-10 py-3">
+<div class="flex items-center gap-4">
+<div class="size-6 text-[var(--primary-color)]">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold tracking-[-0.015em]">MathPrep</h2>
+</div>
+<div class="flex flex-1 items-center justify-end gap-6">
+<button class="flex cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-[#2d372a] text-white hover:bg-opacity-80">
+<span class="material-symbols-outlined"> notifications </span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDBndcYmOEHKIxQ_ALeR-OMzcwK3lHv_f_ghawYCQsD7MmM0jvS0tpl9CtFzx07z5Lo5FGfNfGAVW-sE-o6KjhrZCTlNj0LjEcvvV3cYD8F72lYGv7XFE_T5IIW0IthD_eC7TS6MDpzskHUR4KsOkeHDLao8oyCzKf2U2b2GnKYb3RlmphVmul5rUgUQr1H3bgQPCF0NPiicVdVS2kta2hXAAzTSONpibOCe7VKInsIb0AQJc6YVxafpeyis1d3qNZ1Tc1ZsukJgdQ");'></div>
+</div>
+</header>
+<main class="flex flex-1 items-center justify-center py-10">
+<div class="flex w-full max-w-4xl flex-col rounded-2xl bg-[#1a1f19] p-8 shadow-2xl">
+<div class="mb-6 flex items-center justify-between">
+<p class="text-sm font-medium text-gray-400">Question 1 of 4</p>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xl text-gray-400"> timer </span>
+<p class="text-sm font-medium text-gray-400">Time Remaining: <span class="font-semibold text-white">00:45:23</span></p>
+</div>
+</div>
+<div class="mb-8 h-2 w-full rounded-full bg-[#2d372a]">
+<div class="h-2 rounded-full bg-[var(--primary-color)]" style="width: 25%;"></div>
+</div>
+<h3 class="mb-8 text-2xl font-bold leading-tight">What is the derivative of f(x) = 3x^2 - 2x + 5?</h3>
+<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+<label class="group flex cursor-pointer items-center gap-4 rounded-xl border border-solid border-[#2d372a] p-4 transition-colors hover:bg-[#2d372a] has-[:checked]:border-[var(--primary-color)] has-[:checked]:bg-[#1f2b1c]">
+<input checked="" class="h-5 w-5 appearance-none rounded-full border-2 border-[#42513e] bg-transparent transition-colors checked:border-[var(--primary-color)] checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0" name="answer" type="radio"/>
+<span class="text-base font-medium">6x - 2</span>
+</label>
+<label class="group flex cursor-pointer items-center gap-4 rounded-xl border border-solid border-[#2d372a] p-4 transition-colors hover:bg-[#2d372a] has-[:checked]:border-[var(--primary-color)] has-[:checked]:bg-[#1f2b1c]">
+<input class="h-5 w-5 appearance-none rounded-full border-2 border-[#42513e] bg-transparent transition-colors checked:border-[var(--primary-color)] checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0" name="answer" type="radio"/>
+<span class="text-base font-medium">3x - 2</span>
+</label>
+<label class="group flex cursor-pointer items-center gap-4 rounded-xl border border-solid border-[#2d372a] p-4 transition-colors hover:bg-[#2d372a] has-[:checked]:border-[var(--primary-color)] has-[:checked]:bg-[#1f2b1c]">
+<input class="h-5 w-5 appearance-none rounded-full border-2 border-[#42513e] bg-transparent transition-colors checked:border-[var(--primary-color)] checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0" name="answer" type="radio"/>
+<span class="text-base font-medium">6x + 5</span>
+</label>
+<label class="group flex cursor-pointer items-center gap-4 rounded-xl border border-solid border-[#2d372a] p-4 transition-colors hover:bg-[#2d372a] has-[:checked]:border-[var(--primary-color)] has-[:checked]:bg-[#1f2b1c]">
+<input class="h-5 w-5 appearance-none rounded-full border-2 border-[#42513e] bg-transparent transition-colors checked:border-[var(--primary-color)] checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0" name="answer" type="radio"/>
+<span class="text-base font-medium">3x + 5</span>
+</label>
+</div>
+<div class="mt-8 flex justify-between">
+<button class="flex min-w-[120px] items-center justify-center gap-2 rounded-full bg-[#2d372a] px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-opacity-80 disabled:cursor-not-allowed disabled:opacity-50" disabled="">
+<span class="material-symbols-outlined"> arrow_back </span>
+<span class="truncate">Previous</span>
+</button>
+<button class="flex min-w-[120px] items-center justify-center gap-2 rounded-full bg-[var(--primary-color)] px-6 py-3 text-sm font-bold text-[#131712] transition-colors hover:bg-opacity-80">
+<span class="truncate">Next</span>
+<span class="material-symbols-outlined"> arrow_forward </span>
+</button>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>
